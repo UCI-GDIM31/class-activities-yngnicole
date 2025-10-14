@@ -25,7 +25,7 @@ public class BallW3 : MonoBehaviour {
         //      of _speedMultiplier. TUNE that value in the Inspector and see
         //      what happens!
 
-        //rigidbody.linearvelocity *= speedmultiplier;
+        _rigidbody.linearVelocity *= _speedMultiplier;
 
         // STEP 1 -------------------------------------------------------------
 

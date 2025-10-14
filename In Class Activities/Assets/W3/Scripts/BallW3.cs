@@ -10,6 +10,7 @@ public class BallW3 : MonoBehaviour {
 
     // ------------------------------------------------------------------------
     // This method is called by Unity whenever the ball hits something.
+    [SerializeField]
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // STEP 1 -------------------------------------------------------------

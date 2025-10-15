@@ -554,7 +554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BallW3
   ballRenderer: {fileID: 447274218}
   _rigidbody: {fileID: 447274217}
-  _speedMultiplier: 1.5
+  _speedMultiplier: 1
   _speedThreshold: 10
 --- !u!58 &447274216
 CircleCollider2D:
@@ -1191,7 +1191,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61.6
+  m_fontSize: 51.45
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2573,7 +2573,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 70.4
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1

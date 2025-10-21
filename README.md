@@ -19,3 +19,6 @@ We are table 1: Describe lines 5, 22, and 25
 Line 5 is a member variable in the class CW4 with the type float.
 Line 22 is method that is calling the arguememt "Vertical." The type is a float. It moves the object vertically because it is being called vertically. The vertical movement is multiplied by speed and time. 
 Line 25 is declaring the variable Translate. The parameters of Translate are 0, 0 and translation.
+Our solution we came up with for the collider activity is to put a Rigidbodies to the Cat and the Soccer Ball so that they can move and come into contact with objects. 
+We checked Is Trigger for the Goal so that the ball can go through the goal. 
+Our game didn't work perfectly the first time because our cat and ball were rotating everywhere. To fix this we set constraints to the cat and froze the rotation. The ball was being kicked everywhere and rotating because the Cat's collider was on the ball inside of on the cat. We fixed the collider onto the cat and changed to shape to match the cat. 

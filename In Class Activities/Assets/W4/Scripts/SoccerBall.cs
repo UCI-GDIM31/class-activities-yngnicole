@@ -1,3 +1,4 @@
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,8 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private TMP_Text _pointsText;
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private ParticleSystem _goalVFX;
-    int numberPoints = 0; 
+    int numberPoints = 0;
+    float time = 0;
 
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
@@ -55,6 +57,7 @@ public class SoccerBall : MonoBehaviour
         _goalVFX.Play();
         numberPoints++;
         _pointsText.text = numberPoints.ToString();
+        time = 0; 
     }
     //
     // Next, we're going to make a method named MadeGoal to call if the
@@ -93,8 +96,8 @@ public class SoccerBall : MonoBehaviour
     //      1. Create a new member variable to keep track of the points.
     //      2. Use your MadeGoal method to update the points and text.
 
-   
-    
+
+
 
     //
     // STEP 5 -----------------------------------------------------------------
@@ -114,5 +117,11 @@ public class SoccerBall : MonoBehaviour
     //              and update _timeText with the new time.
     //      2. Use the MadeGoal method to reset your
     //              time variable when the player makes a goal. 
+    private void Update()
+    {
+        time += Time.deltaTime; 
+        _timeText.text = "Time since last goal" + time.ToString();
+    }
+
     // STEP 6 -----------------------------------------------------------------
 }

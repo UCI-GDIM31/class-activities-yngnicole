@@ -19,10 +19,3 @@ We are table 1: Describe lines 5, 22, and 25
 Line 5 is a member variable in the class CW4 with the type float.
 Line 22 is method that is calling the arguememt "Vertical." The type is a float. It moves the object vertically because it is being called vertically. The vertical movement is multiplied by speed and time. 
 Line 25 is declaring the variable Translate. The parameters of Translate are 0, 0 and translation.
-
-
-__ is a member variable, and the type is ___
-__ is a Component
-this line is calling a method
-the method parameters are ___
-types like float, integer, boolean, string

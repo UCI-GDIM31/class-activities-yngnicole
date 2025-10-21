@@ -7033,10 +7033,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.134409
+  m_Radius: 0.1444247
   m_Height: 0.6552446
   m_Direction: 2
-  m_Center: {x: -0.0135483, y: 0.0002411902, z: -0.012019038}
+  m_Center: {x: -0.0135483, y: 0.16623133, z: -0.012019038}
 --- !u!54 &6397291155275392800
 Rigidbody:
   m_ObjectHideFlags: 0

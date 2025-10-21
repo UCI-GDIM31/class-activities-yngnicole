@@ -30,6 +30,7 @@ public class SoccerBall : MonoBehaviour
         //
         if (collider.gameObject.tag == "Goal")
         {
+            MadeGoal();
             Debug.Log("Goal Reached");
         }
         // Write an IF STATEMENT to check if the game object we collided with
@@ -47,6 +48,11 @@ public class SoccerBall : MonoBehaviour
 
 
     // STEP 3 -----------------------------------------------------------------
+    void MadeGoal()
+    {
+    Debug.Log("Goal Reached");
+    }
+    //
     // Next, we're going to make a method named MadeGoal to call if the
     //      SoccerBall collided with an object tagged "Goal".
     // MadeGoal RETURNS NOTHING, and has NO INPUT.

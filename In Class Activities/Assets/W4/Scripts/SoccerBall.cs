@@ -27,6 +27,11 @@ public class SoccerBall : MonoBehaviour
         Debug.Log("detected a collision with a trigger collider!" + collider.name);
 
         // STEP 2 -------------------------------------------------------------
+        //
+        if (collider.gameObject.tag == "Goal")
+        {
+            Debug.Log("Goal Reached");
+        }
         // Write an IF STATEMENT to check if the game object we collided with
         //      has the tag "Goal".
         // Refer to the slides for an example of how to check this :)

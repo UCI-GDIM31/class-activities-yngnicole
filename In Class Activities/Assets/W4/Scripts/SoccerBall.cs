@@ -51,6 +51,7 @@ public class SoccerBall : MonoBehaviour
     void MadeGoal()
     {
     Debug.Log("Goal Reached");
+        _goalVFX.Play();
     }
     //
     // Next, we're going to make a method named MadeGoal to call if the
@@ -67,6 +68,7 @@ public class SoccerBall : MonoBehaviour
     // https://docs.unity3d.com/6000.0/Documentation/ScriptReference/ParticleSystem.Play.html 
     //
     // Call Play on _goalVFX.
+    
 
     // STEP 4 -------------------------------------------------------------
 
@@ -87,6 +89,8 @@ public class SoccerBall : MonoBehaviour
     // You will need to:
     //      1. Create a new member variable to keep track of the points.
     //      2. Use your MadeGoal method to update the points and text.
+
+
     //
     // STEP 5 -----------------------------------------------------------------
 

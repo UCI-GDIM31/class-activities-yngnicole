@@ -22,3 +22,6 @@ Line 25 is declaring the variable Translate. The parameters of Translate are 0, 
 Our solution we came up with for the collider activity is to put a Rigidbodies to the Cat and the Soccer Ball so that they can move and come into contact with objects. 
 We checked Is Trigger for the Goal so that the ball can go through the goal. 
 Our game didn't work perfectly the first time because our cat and ball were rotating everywhere. To fix this we set constraints to the cat and froze the rotation. The ball was being kicked everywhere and rotating because the Cat's collider was on the ball inside of on the cat. We fixed the collider onto the cat and changed to shape to match the cat. 
+
+### W5 
+The question we had was about vectors. We were thinking about what the positive and negative infinity was for and how it worked. We guessed that it is for an object to move infitely towards that a positive or negative direction. 

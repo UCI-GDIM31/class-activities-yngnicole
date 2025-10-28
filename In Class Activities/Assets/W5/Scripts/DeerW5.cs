@@ -20,10 +20,8 @@ using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class DeerW5 : MonoBehaviour
 {
-    [SerializeField] private float _moveSpeed = 1.0f;
-    [SerializeField] private float _turnSpeed = 1.0f;
     [SerializeField] private Animator _animator;
-    [SerializeField] private float _transform = 0.0f;
+    [SerializeField] private Transform target;
 
     private string _isWalkingName = "DeerIsWalking";
 
@@ -32,9 +30,22 @@ public class DeerW5 : MonoBehaviour
     {
         myNavMeshAgent = GetComponent<NavMeshAgent>(); 
     }
-    private void Update()
+
+    void Update()
     {
-      // SetDestinationToMousePosition(); 
+        if (Input.GetMouseButtonDown(0))
+        {
+            SetDestinationToMousePosition();
+        }
     }
 
+    void SetDestinationToMousePosition()
+    {
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit))
+        {
+            myNavMeshAgent.SetDestination(hit.point);
+        }
+    }
 }

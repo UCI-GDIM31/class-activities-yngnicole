@@ -44,8 +44,8 @@ public class CatW5 : MonoBehaviour
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
         Vector3 translation = Vector3.zero;
-        
-
+        transform.position += Vector3.back * Time.deltaTime;
+        transform.position += Vector3.forward * Time.deltaTime; 
 
         // STEP 1 & 2 ---------------------------------------------------------
 
@@ -62,3 +62,4 @@ public class CatW5 : MonoBehaviour
         }
     }
 }
+

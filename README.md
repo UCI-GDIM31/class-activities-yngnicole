@@ -26,6 +26,4 @@ Our game didn't work perfectly the first time because our cat and ball were rota
 ### W5 
 The question we had was about vectors. We were thinking about what the positive and negative infinity was for and how it worked. We guessed that it is for an object to move infitely towards that a positive or negative direction. 
 For the in class activity we think the DeerW5 class needs the folowing member variable: speed or movement variable, turn variable, and transform variable. 
-We think this class needs a 
-What method(s) does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?
-What should the method(s) do?
+We think this class needs a Update() method so that the deers movement is updated every frame and a Start() method so it begins moving in the beginning. 

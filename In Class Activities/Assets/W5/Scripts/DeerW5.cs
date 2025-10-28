@@ -34,7 +34,7 @@ public class DeerW5 : MonoBehaviour
     }
     private void Update()
     {
-        SetDestinationToMousePosition(); 
+      // SetDestinationToMousePosition(); 
     }
 
 }

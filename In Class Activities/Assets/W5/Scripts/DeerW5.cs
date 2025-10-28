@@ -22,30 +22,14 @@ public class DeerW5 : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private Transform target;
+    [SerializeField] private Transform _destination;
 
     private string _isWalkingName = "DeerIsWalking";
 
-    NavMeshAgent myNavMeshAgent;
- private void Start()
+    private void Start()
     {
-        myNavMeshAgent = GetComponent<NavMeshAgent>(); 
-    }
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            SetDestinationToMousePosition();
-        }
-    }
-
-    void SetDestinationToMousePosition()
-    {
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit))
-        {
-            myNavMeshAgent.SetDestination(hit.point);
-        }
+        agent.SetDestination(_destination.position);
     }
 }

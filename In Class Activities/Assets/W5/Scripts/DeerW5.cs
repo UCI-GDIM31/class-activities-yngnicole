@@ -23,8 +23,6 @@ public class DeerW5 : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private Transform _destination;
 
-    private string _isWalkingName = "DeerIsWalking";
-
     private void Start()
     {
         NavMeshAgent agent = GetComponent<NavMeshAgent>();

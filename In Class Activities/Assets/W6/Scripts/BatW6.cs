@@ -15,14 +15,13 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class BatW6 : MonoBehaviour
 {
-    [SerializeField] private float _speed;
+    [SerializeField] public float _speed;
     private Transform _playerTransform;
 
     public void EnableChase(Transform player)
     {
         enabled = true;
         _playerTransform = player;
-
     }
 
     public void DisableChase()

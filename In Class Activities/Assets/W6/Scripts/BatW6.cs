@@ -36,6 +36,9 @@ public class BatW6 : MonoBehaviour
             _playerTransform.position,
             _speed * Time.deltaTime
             );
+
+
+
     }
 
 }

@@ -27,3 +27,13 @@ Our game didn't work perfectly the first time because our cat and ball were rota
 The question we had was about vectors. We were thinking about what the positive and negative infinity was for and how it worked. We guessed that it is for an object to move infitely towards that a positive or negative direction. 
 For the in class activity we think the DeerW5 class needs the folowing member variable: speed or movement variable, turn variable, and transform variable. 
 We think this class needs a Update() method so that the deers movement is updated every frame and a Start() method so it begins moving in the beginning. 
+
+### W6
+My category assignment was General C# Coding
+[Google Docs]{https://docs.google.com/document/d/1_oQY0junK3b37PITxN8uItEEPKJGHvci47NArvtUxiQ/edit?tab=t.0}
+Plan to create BatW6 Class: We talked about how the BatW6 class needs a speed variable. We think the 
+method the class needs is Start(), Update(), GameObject.SetActive(). The Start() method is used so the bat 
+starts moving in the beginning of the game. The Update() method is so the bat's movement is 
+updated every frame so it's movement is smooth. The GameObject.SetActive() is used so we can enable or 
+disable the bat from chasing the player. 
+

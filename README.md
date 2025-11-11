@@ -37,3 +37,9 @@ starts moving in the beginning of the game. The Update() method is so the bat's 
 updated every frame so it's movement is smooth. The GameObject.SetActive() is used so we can enable or 
 disable the bat from chasing the player. 
 
+### W7 
+Link to document: 
+[Google Docs]{https://docs.google.com/document/d/1RbOJV14KBQmt5sQBiYGuODTakWBMyocLs59OTx8vLRQ/edit?usp=sharing}
+My role in the group was gameplay.
+What was wrong with the code in Step 2 was that originally what was written in the code was translate.Positon. This moves 
+the muskcat on the world's plane. We changed it to translate.Translation which moves the muskrat relative to it's own plane. 

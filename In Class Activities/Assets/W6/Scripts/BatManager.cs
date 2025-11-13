@@ -23,6 +23,8 @@ public class BatManager : MonoBehaviour
     // In the Inspector, add at least a few different messages for the bats to
     //      say when they reach the player.
 
+    [SerializeField] private string[] _messages;
+
     // STEP 3 -----------------------------------------------------------------
 
     [SerializeField] private float[] _newTextTimers;
@@ -70,13 +72,22 @@ public class BatManager : MonoBehaviour
         for (int i = 0; i < _bats.Length; i++)
         {
             BatW6 bat = _bats[i];
-         //   if (Vector3.Distance(bat.transform.position, .position) <= _interactDistance)
-         //   {
-         //       bat.Runaway(_player.position);
-         //   } else
-         //   {
-         //       enabled = false;
-          //  }
+            float distance = Vector3.Distance(bat.transform.position, _playerTransform.position);
+
+            if (distance < _interactDistance)
+            {
+                bat.EnableChase(_playerTransform);  
+            }
+            else
+            {
+                bat.DisableChase();  
+            }
+
+            if (distance < _overlapDistance)
+            {
+                CreateReactions(bat);
+            }
+
         }
 
         //
